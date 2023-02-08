@@ -10,6 +10,9 @@ function calculaImc(weight, height) {
   var imc = weight / (height * height);
   var result = 'Seu IMC é ' + imc.toFixed(2);
 
+  if (weight == 0 && height == 0) {
+    return;
+  }
   if (imc < 17) {
     result += ' - e você está MUITO ABAIXO DO PESO!';
   } else if (imc >= 17 && imc <= 18.49) {
@@ -22,7 +25,7 @@ function calculaImc(weight, height) {
     result += ' - e você está COM OBESIDAD GRAU 1!';
   } else if (imc >= 35 && imc <= 39.99) {
     result += ' - e você está COM OBESIDADE GRAU 2 (SEVERA)!';
-  } else {
+  } else if (imc >= 40) {
     result += ' - e você está COM OBESIDADE GRAU 3 (MÓRBIDA)!';
   }
   return result;
