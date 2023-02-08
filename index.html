@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <title>IMC</title>
+  </head>
+  <body>
+    <h1>IMC</h1>
+    <div class="imc">
+      <div class="peso">
+        <label for="input-weight">Informe o seu peso em (kg):</label>
+        <input id="input-weight" type="number" value="90" step="0.1" />
+      </div>
+      <div class="altura">
+        <label for="input-height">Informe a sua altura (m):</label>
+        <input id="input-height" type="number" value="1.71" step="0.01" />
+      </div>
+    </div>
+    <div class="botao">
+      <p><button id="button-calculate-imc">Calcular IMC</button></p>
+    </div>
+    <p id="paragraph-result">
+      <strong id="imc-result"></strong>
+    </p>
+
+    <footer>
+      <h2>Desenvolvido por Welliton Martins</h2>
+      <p>2022</p>
+    </footer>
+
+    <script defer src="./js/script.js"></script>
+  </body>
+</html>
